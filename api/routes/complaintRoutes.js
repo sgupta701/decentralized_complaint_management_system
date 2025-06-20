@@ -8,7 +8,6 @@ router.get('/', complaintController.getAllComplaints);
 
 router.post('/assign', complaintController.assignComplaint);
 
-// ✔️ POST /api/complaints/update
 router.post('/update', complaintController.updateComplaint);
 
 // ✔️ GET /api/complaints/user/:userId
