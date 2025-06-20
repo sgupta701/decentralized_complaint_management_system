@@ -1,1 +1,0 @@
-decentralized complaint management system
