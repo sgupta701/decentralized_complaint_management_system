@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const complaintController = require('../controllers/complaintController');
 
-// ✔️ POST /api/complaints -> submit complaint
 router.post('/', complaintController.submitComplaint);
 
 // ✔️ GET /api/complaints -> get all complaints
