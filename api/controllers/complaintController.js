@@ -49,5 +49,16 @@ module.exports = {
     } catch (error) {
       res.status(500).json({ error: 'Failed to fetch' });
     }
-  }
+  },
+  getComplaintsByUser: async (req, res) => {
+    try {
+        const { userId } = req.params;
+        const { contract, gateway } = await getContract();
+        const result = await contract.evaluateTransaction('getComplaintsByUser', userId);
+        await gateway.disconnect();
+        res.json(JSON.parse(result.toString()));
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to get user complaints' });
+    }
+  },
 };
