@@ -6,7 +6,6 @@ router.post('/', complaintController.submitComplaint);
 
 router.get('/', complaintController.getAllComplaints);
 
-// ✔️ POST /api/complaints/assign
 router.post('/assign', complaintController.assignComplaint);
 
 // ✔️ POST /api/complaints/update
