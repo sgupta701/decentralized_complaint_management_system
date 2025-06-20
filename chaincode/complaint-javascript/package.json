@@ -1,0 +1,11 @@
+{
+  "name": "complaint-chaincode",
+  "version": "1.0.0",
+  "description": "Complaint management smart contract",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "fabric-shim": "^2.2.0"
+  }
+}
