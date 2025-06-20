@@ -10,7 +10,6 @@ router.post('/assign', complaintController.assignComplaint);
 
 router.post('/update', complaintController.updateComplaint);
 
-// ✔️ GET /api/complaints/user/:userId
 router.get('/user/:userId', complaintController.getComplaintsByUser);
 
 module.exports = router;
