@@ -1,7 +1,7 @@
 # Node dependencies
 **/node_modules/
 
-# Dependency lock files (optional to ignore — if you want consistent installs across environments, keep these)
+# Dependency lock files
 # package-lock.json
 
 # Build outputs
@@ -18,7 +18,7 @@ test-network/genesis.block
 test-network/*.tx
 test-network/*.block
 
-# Fabric wallets or identity stores (if any created)
+# Fabric wallets 
 **/wallet/
 **/identities/
 
@@ -40,7 +40,7 @@ Thumbs.db
 # Test coverage output
 **/coverage/
 
-# Chaincode metadata or temporary files (if any)
+# Chaincode metadata
 **/*.tar.gz
 **/chaincode.log
 
