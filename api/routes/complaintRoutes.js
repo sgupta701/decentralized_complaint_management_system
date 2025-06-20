@@ -4,7 +4,6 @@ const complaintController = require('../controllers/complaintController');
 
 router.post('/', complaintController.submitComplaint);
 
-// ✔️ GET /api/complaints -> get all complaints
 router.get('/', complaintController.getAllComplaints);
 
 // ✔️ POST /api/complaints/assign
