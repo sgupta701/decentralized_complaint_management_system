@@ -2,6 +2,7 @@ const { getContract } = require('../fabric/gateway');
 
 module.exports = {
   submitComplaint: async (req, res) => {
+    
     try {
       const { userId, description, category, isAnonymous } = req.body;
       const { contract, gateway } = await getContract();
@@ -12,12 +13,14 @@ module.exports = {
         category,
         isAnonymous.toString()
       );
+      
       await gateway.disconnect();
       res.json({ message: 'Complaint submitted', result: result.toString() });
     } catch (error) {
       res.status(500).json({ error: 'Failed to submit' });
     }
   },
+  
   assignComplaint: async (req, res) => {
     try {
       const { complaintId, departmentId } = req.body;
