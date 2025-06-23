@@ -4,6 +4,7 @@ const { Gateway, Wallets } = require('fabric-network');
 require('dotenv').config();
 
 async function getContract() {
+  
   try {
     const ccpPath = path.resolve(__dirname, process.env.CONNECTION_PROFILE);
     const ccp = JSON.parse(fs.readFileSync(ccpPath, 'utf8'));
