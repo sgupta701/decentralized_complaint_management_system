@@ -118,7 +118,6 @@ npm start
 - **Node.js** – REST API server
 - **React.js** – Frontend Interface
 - **Fabric SDK** – Contract interaction
-- **Docker** – Containerized network
 - **Express.js** – Lightweight server
 
 ---
