@@ -1,8 +1,8 @@
 const { getContract } = require('../fabric/gateway');
 
 module.exports = {
+  
   submitComplaint: async (req, res) => {
-    
     try {
       const { userId, description, category, isAnonymous } = req.body;
       const { contract, gateway } = await getContract();
@@ -32,6 +32,7 @@ module.exports = {
       res.status(500).json({ error: 'Failed to assign' });
     }
   },
+  
   updateComplaint: async (req, res) => {
     try {
       const { complaintId, status, remarks } = req.body;
@@ -43,6 +44,7 @@ module.exports = {
       res.status(500).json({ error: 'Failed to update' });
     }
   },
+  
   getAllComplaints: async (req, res) => {
     try {
       const { contract, gateway } = await getContract();
@@ -53,6 +55,7 @@ module.exports = {
       res.status(500).json({ error: 'Failed to fetch' });
     }
   },
+  
   getComplaintsByUser: async (req, res) => {
     try {
         const { userId } = req.params;
