@@ -67,15 +67,6 @@ decentralized-complaint-system/
 
 ---
 
-## 🧪 Prerequisites
-
-- Docker & Docker Compose
-- Node.js v18+
-- Hyperledger Fabric binaries and images
-- Fabric CA (optional, skipped here)
-
----
-
 ## 🚀 How to Run
 
 ### 1. Bootstrap the Fabric Network
